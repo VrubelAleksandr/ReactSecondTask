@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.title {
+  text-transform: uppercase;
+  font-size: 40px;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item-list {
+  background-color: rgb(197, 197, 171);
+  padding: 10px 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item-done {
+  background-color: darkgreen;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input:placeholder {
+  font-family: "Gill Sans", sans-serif;
+}
+.input-task {
+  padding: 5px;
+  width: 90%;
+  height: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.btn {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 16px;
   color: white;
+  background: #13404e;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #4f7884;
+  box-shadow: 2px 2px 5px #0c3d7a;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-delete {
+  padding: 5px;
+  background: red;
+  border: 1px solid rgb(17, 2, 2);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-delete:hover {
+  background: #ad1d1d;
+  box-shadow: 1px 1px 3px #330406;
 }
